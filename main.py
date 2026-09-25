@@ -1,35 +1,47 @@
-# this function adds 2 numbers
+
+################################# calculator code
 def add(x,y):
     print(x+y)
-add(6,7)
-################################################
-
-#this function subtracts 2 numbers
 def subtract(x,y):
     print(x-y)
-subtract(6,7)
-################################################
-
-# this function multiplies 2 numbers
 def multiply(x,y):
-    print(x,y)
-multiply(6,7)
-################################################
-
-# this function multiplies 2 numbers
+    print(x*y)
 def divide(x,y):
-    print(x,y)
-divide(6,7)
-################################################
-
-x = int(input("enter your first number"))
-y = int(input("enter your second number"))
-
-add(x,y)
-subtract(x,y)
-multiply(x,y)
-divide(x,y)
+    print(x/y)
 
 print("welcome to my awesome calc app only 69.99")
 print("What math we doing man")
-print("Type (a)dd (s)ubtract (m)ultiply (d)ivide (q)uit")
+
+while(True):
+    print("Type (a)dd (s)ubtract (m)ultiply (d)ivide (q)uit")
+    user_choice = input(": ")
+############## addition ###################
+    if user_choice == 'a':
+        x = int(input("enter the first number"))
+        y = int(input("enter the second number"))
+        add(x,y)
+
+############# subtraction #################
+    elif user_choice == 's':
+        x = int(input("enter the first number"))
+        y = int(input("enter the second number"))
+        subtract(x,y)
+
+############# multiplication ###############
+    elif user_choice == 'm':
+        x = int(input("enter the first number"))
+        y = int(input("enter the second number"))
+        multiply(x,y)
+
+############# divide #######################
+    elif user_choice == 'd':
+        x = int(input("enter the first number"))
+        y = int(input("enter the second number"))
+        divide(x,y)
+    elif user_choice == 'q':
+        break
+    else:
+        print("Try Again")
+
+
+
